@@ -21,7 +21,11 @@
 7. Um **depósito** tem de um ou mais **funcionários**;  
 8. Um **depósito** guarda uma quantidade de **objetos**;  
 9. Um **depósito** tem identificação, nome, quantidade;  
-10. O **objeto** tem identificação, nome, identificação do **usuário**, data e hora do cadastro, descrição, situação, status e categoria.  
+10. O **objeto** tem identificação, nome, identificação do **usuário**, data e hora do cadastro, descrição, situação, status e categoria;  
 11. Temos **objetos** com o status: disponível ou indisponível;  
-12. Temos **objetos** com  a situação: perdido, encontrado e resgatado ;  
-13. **Resgate do objeto** tem identificação do objeto, data e hora da saída do objeto, nome de quem achou, nome de quem perdeu;  
+12. Temos **objetos** com  a situação: perdido, encontrado e resgatado;  
+13. **Retirada do objeto** tem identificação do objeto, data e hora da saída do objeto, nome de quem achou, nome de quem perdeu.  
+
+---
+
+<p align="center"><strong>❔ LOST&FOUND :closed_umbrella: <strong></p>  
