@@ -10,7 +10,7 @@
 | Renata  | Analista          | renatakarla02@gmail.com     | [Clique aqui :octocat:](https://github.com/renatak12)        |
 | Wanessa | Gerente, Analista | wanessaparelhas68@gmail.com | [Clique aqui :octocat:](https://github.com/wanessabezerra)   |
 
-## Lista de Requisitos Funcionais
+## Lista de Requisitos
 
 1. **Funcionário** tem identificação, nome, username, email;  
 2. Um **funcionário** pode enviar **mensagem**;  
