@@ -21,7 +21,7 @@ CREATE TABLE Usuario(
 	email VARCHAR(30) NOT NULL,
 	cod_telefone INT NOT NULL,
 	CONSTRAINT fk_telefone FOREIGN KEY (cod_telefone) 
-	  REFERENCES Telefone(id) 
+	  	REFERENCES Telefone(id) 
 		ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
