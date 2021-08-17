@@ -1,32 +1,19 @@
-INSERT INTO Telefone VALUES
-    (1, '084876273514');
-    
-INSERT INTO Telefone VALUES
-    (2, '084098495736');
-    
-INSERT INTO Telefone VALUES
-     (3, '08440028922');
-
-INSERT INTO Telefone VALUES
-     (4, '08451139033');
-
-INSERT INTO Telefone VALUES
-    (5, '084876543210');
-    
-INSERT INTO Usuario VALUES
-    (1, 'Seu Chico', 'seuchicao@iahu.com', 'Convencional', 1);
-
-INSERT INTO Usuario VALUES
-    (2, 'Paulin Bacana', 'paulin@bacana.com', 'Convencional', 2);
-
-INSERT INTO Usuario VALUES
-    (3, 'Dona Zazá', 'zazadograu@gemeil.com', 'Convencional', 3);
-
-INSERT INTO Usuario VALUES
-    (4, 'Jorgin', 'jorgindazn@rotmeil.com', 'Convencional', 4);
-
-INSERT INTO Usuario VALUES
-    (5, 'Seu Madruga', 'seumadruguinha@aluguel.com', 'Convencional', 5);
+INSERT INTO Telefone(id, numero)
+    VALUES
+    (1, '084876273514'),
+    (2, '084098495736'),
+    (3, '084400289223'),
+    (4, '084511390333'),
+    (5, '084876543210')
+ ;
+ 
+INSERT INTO Usuario(id, nome, email) VALUES
+    (1, 'Seu Chico', 'seuchicao@iahu.com', 1),
+    (2, 'Paulin Bacana', 'paulin@bacana.com', 2),
+    (3, 'Dona Zazá', 'zazadograu@gemeil.com', 3),
+    (4, 'Jorgin', 'jorgindazn@rotmeil.com', 4),
+    (5, 'Seu Madruga', 'seumadruguinha@aluguel.com' 5)
+;
     
 INSERT INTO Deposito VALUES
     (1, 'Carteira com documentos', 1);
