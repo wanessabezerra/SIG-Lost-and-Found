@@ -27,3 +27,7 @@ Objeto_Retirada(cod_objeto) ⇒ Objeto(id)
 Objeto_Retirada(cod_retirada) ⇒ Retirada_do_Objeto (id)  
 Mensagem(cod_funcionario) ⇒ Funcionario(id)  
 Mensagem(cod_usuario) ⇒ Usuario(id)  
+
+---
+
+<p align="center"><strong>❔ LOST&FOUND :closed_umbrella: <strong></p>
