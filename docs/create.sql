@@ -32,10 +32,10 @@ CREATE TABLE Deposito(
 );
 
 CREATE TABLE Funcionario(
-	username VARCHAR(20) NOT NULL,
-	nome VARCHAR(50) NOT NULL,
-	email VARCHAR(50) NOT NULL,
 	id INT PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL,
+	username VARCHAR(20) NOT NULL,
+	email VARCHAR(50) NOT NULL,
 	cod_deposito INT NOT NULL,
 	CONSTRAINT fk_deposito FOREIGN KEY(cod_deposito) 
 		REFERENCES Deposito(id) 
