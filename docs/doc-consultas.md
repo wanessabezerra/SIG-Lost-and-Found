@@ -30,6 +30,7 @@
 
 15. Faça uma consulta que selecione os objetos que estão com o status de perdido entre 2019 e 2021 e que nunca foram recuperados.
 
+---
 <p align="center"><strong>❔ LOST&FOUND :closed_umbrella: <strong></p>
-=======
+
 
