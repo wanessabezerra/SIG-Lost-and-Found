@@ -59,3 +59,15 @@ INNER JOIN Usuario AS u
 INNER JOIN Mensagem AS m
 ON o.status = 'encontrado'
 WHERE u.id = o.id AND m.id_usuario = u.id;
+
+#10. Encontre os nomes de todos os usuários no banco de dados, que não são tipo discente.
+
+#11. Faça uma consulta que selecione o objeto mais perdido por categoria.
+
+#12. Encontre os nomes de todos os usuários, que recuperaram o objeto mochila.
+
+#13. Encontre os nomes e emails de todos os usuários que realizaram a retirada de 2 ou mais objetos.
+
+#14. Faça uma consulta que selecione os nomes dos usuários que mais encontraram objetos entre 2019 e 2021.
+
+#15. Faça uma consulta que selecione os objetos que estão com o status de perdido entre 2019 e 2021 e que nunca foram recuperados.
