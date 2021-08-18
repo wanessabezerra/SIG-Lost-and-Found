@@ -19,6 +19,7 @@ CREATE TABLE Usuario(
 	id INT PRIMARY KEY,
 	nome VARCHAR(50) NOT NULL,
 	email VARCHAR(30) NOT NULL,
+	tipo VARCHAR(50) NOT NULL,
 	cod_telefone INT NOT NULL,
 	CONSTRAINT fk_telefone FOREIGN KEY (cod_telefone) 
 		REFERENCES Telefone(id) 
