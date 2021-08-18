@@ -13,7 +13,7 @@ INSERT INTO Usuario(id, nome, email, cod_telefone)
         (2, 'Paulin Bacana', 'paulin@bacana.com', 2),
         (3, 'Dona Zazá', 'zazadograu@gemeil.com', 3),
         (4, 'Jorgin', 'jorgindazn@rotmeil.com', 4),
-        (5, 'Seu Madruga', 'seumadruguinha@aluguel.com' 5)
+        (5, 'Seu Madruga', 'seumadruguinha@aluguel.com', 5)
 ;
     
 INSERT INTO Deposito(id, nome, quantidade) 
@@ -27,11 +27,11 @@ INSERT INTO Deposito(id, nome, quantidade)
 
 INSERT INTO Funcionario(id, nome, username, email, cod_deposito) 
     VALUES
-        (1, 'Ulisses da Silva', 'ulisses', 'ulisses@iahu.com', 1, 1),
-        (2, 'Sérgio Santos', 'serginho', 'serjao@berranteiro.com', 2, 2),
-        (3, 'Daniela Fernandes', 'dani', 'danifer@gemeil.com', 3, 3),
-        (4, 'Moraes Moreira', 'moraes', 'moramore@rotmeil.com', 4, 4),
-        (5, 'Ana Paula', 'anapaula', 'ana@paula.com', 5, 5)
+        (1, 'Ulisses da Silva', 'ulisses', 'ulisses@iahu.com', 1),
+        (2, 'Sérgio Santos', 'serginho', 'serjao@berranteiro.com', 2),
+        (3, 'Daniela Fernandes', 'dani', 'danifer@gemeil.com', 3),
+        (4, 'Moraes Moreira', 'moraes', 'moramore@rotmeil.com', 4),
+        (5, 'Ana Paula', 'anapaula', 'ana@paula.com', 5)
 ;
 
 INSERT INTO Mensagem(id, conteudo, id_objeto, id_usuario, cod_funcionario, cod_usuario)
