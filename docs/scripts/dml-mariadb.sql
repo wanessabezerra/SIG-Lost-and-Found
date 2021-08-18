@@ -25,14 +25,16 @@ ORDER BY data_hora_entrada;
 # 5. Faça uma consulta que selecione o nome, descrição e situação de todos os objetos que foram encontrados e o seu dono.
 
 SELECT u.nome, o.nome, o.descricao, o.situacao, o.status
-FROM Objeto o JOIN Usuario u
+FROM Objeto o 
+INNER JOIN Usuario u
 ON (o.id_usuario = u.id)
 WHERE o.status = 'encontrado';
 
 # 6. Faça uma consulta que selecione o nome, descrição e situação de todos os objetos que ainda não foram encontrados e o seu dono.
 
 SELECT u.nome, o.nome, o.descricao, o.situacao, o.status
-FROM Objeto o JOIN Usuario u
+FROM Objeto o 
+INNER JOIN Usuario u
 ON (o.id_usuario = u.id)
 WHERE o.status = 'perdido';
 
