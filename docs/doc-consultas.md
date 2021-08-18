@@ -1,4 +1,4 @@
-# Lista de Consultas
+# Lista de Consultas DML
 
 1. Faça uma consulta que selecione o nome, e-mail e telefone de todos os usuários cadastrados no sistema.
 
