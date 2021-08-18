@@ -7,10 +7,11 @@
 
 ## Documentos
 
-| Nome                                  | Link                                                                                       |
-| ------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Documento de Visão                    | [Clique aqui ➡️](docs/doc-visao.md)                                                        |
-| Documento de Modelos                  | [Clique aqui ➡️](docs/doc-modelos.md)                                                      | 
+| Nome                   | Link                                   |
+| ---------------------- | -------------------------------------- |
+| Documento de Visão     | [Clique aqui ➡️](docs/doc-visao.md)     |
+| Documento de Modelos   | [Clique aqui ➡️](docs/doc-modelos.md)   |
+| Documento de Consultas | [Clique aqui ➡️](docs/doc-consultas.md) |
 ---
 
 <p align="center"><strong>❔ LOST&FOUND :closed_umbrella: <strong></p>
