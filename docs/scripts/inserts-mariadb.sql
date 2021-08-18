@@ -7,13 +7,13 @@ INSERT INTO Telefone(id, numero)
         (5, '084876543210')
  ;
  
-INSERT INTO Usuario(id, nome, email, cod_telefone) 
+INSERT INTO Usuario(id, nome, email, tipo, cod_telefone) 
     VALUES
-        (1, 'Seu Chico', 'seuchicao@iahu.com', 1),
-        (2, 'Paulin Bacana', 'paulin@bacana.com', 2),
-        (3, 'Dona Zazá', 'zazadograu@gemeil.com', 3),
-        (4, 'Jorgin', 'jorgindazn@rotmeil.com', 4),
-        (5, 'Seu Madruga', 'seumadruguinha@aluguel.com', 5)
+        (1, 'Seu Chico', 'seuchicao@iahu.com', 'visitante', 1),
+        (2, 'Paulin Bacana', 'paulin@bacana.com', 'discente', 2),
+        (3, 'Dona Zazá', 'zazadograu@gemeil.com', 'discente', 3),
+        (4, 'Jorgin', 'jorgindazn@rotmeil.com', 'docente', 4),
+        (5, 'Seu Madruga', 'seumadruguinha@aluguel.com', 'visitante', 5)
 ;
     
 INSERT INTO Deposito(id, nome, quantidade) 
