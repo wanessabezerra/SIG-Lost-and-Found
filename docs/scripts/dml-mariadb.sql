@@ -62,9 +62,24 @@ WHERE u.id = o.id AND m.id_usuario = u.id;
 
 #10. Encontre os nomes de todos os usuários no banco de dados, que não são tipo discente.
 
+SELECT u.nome 
+FROM Usuario AS u
+WHERE u.tipo NOT IN 
+ (
+  SELECT u.nome 
+  FROM u
+  WHERE u.tipo = 'discente';
+ );
+  
 #11. Faça uma consulta que selecione o objeto mais perdido por categoria.
 
+SELECT 
+
 #12. Encontre os nomes de todos os usuários, que recuperaram o objeto mochila.
+
+SELECT u.nome 
+FROM Usuario AS u
+WHERE 
 
 #13. Encontre os nomes e emails de todos os usuários que realizaram a retirada de 2 ou mais objetos.
 
