@@ -47,7 +47,7 @@ CREATE TABLE Mensagem(
 	id NUMERIC PRIMARY KEY,
 	conteudo VARCHAR(255)  NOT NULL,
 	id_objeto NUMERIC NOT NULL,
-	id_osuario NUMERIC NOT NULL,
+	id_usuario NUMERIC NOT NULL,
 	cod_funcionario NUMERIC NOT NULL,
 	cod_usuario NUMERIC NOT NULL,
 	CONSTRAINT fk_funcionario FOREIGN KEY (cod_funcionario) 
