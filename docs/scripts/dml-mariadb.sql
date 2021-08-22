@@ -3,7 +3,7 @@
 SELECT u.nome, u.email, t.numero
 FROM Usuario u 
 INNER JOIN Telefone t
-ON u.id = t.id
+ON u.id = t.id;
 
 # 2. Faça uma consulta que selecione a quantidade total de objetos presentes no depósito.
 
@@ -66,18 +66,51 @@ SELECT nome
 FROM Usuario 
 WHERE tipo <> 'discente';
   
-# 11. Faça uma consulta que selecione o objeto mais perdido por categoria.
+# 11. Faça uma consulta que selecione o objeto e a categoria em que se encontra.
 
-SELECT 
+SELECT o.nome, c.nome
+FROM Objeto AS o 
+INNER JOIN Categoria AS c
+ON o.cod_categoria = c.id;
 
-# 12. Encontre os nomes de todos os usuários, que recuperaram o objeto mochila.
+# 12. Encontre os nomes de todos os usuários, que recuperaram o objeto livro.
 
-SELECT u.nome 
-FROM Usuario AS u
-WHERE 
+SELECT u.nome
+FROM Usuario u 
+WHERE u.id IN (
+  		SELECT o.id_usuario
+  		FROM Objeto o 
+  		WHERE o.nome = 'livro' AND o.status = 'encontrado'
+);
 
-# 13. Encontre os nomes e emails de todos os usuários que realizaram a retirada de 2 ou mais objetos.
+# 13. Encontre o nome e email do usuário que realizou a retirada do objeto 2.
+
+SELECT u.nome, u.email
+FROM Usuario u
+WHERE u.id IN (
+  		SELECT r.id_retirado_por
+ 		  FROM Retirada_do_Objeto r
+  		WHERE r.cod_objeto = '2' 
+);
 
 # 14. Faça uma consulta que selecione os nomes dos usuários que mais encontraram objetos entre 2019 e 2021.
 
-# 15. Faça uma consulta que selecione os objetos que estão com o status de perdido entre 2019 e 2021 e que nunca foram recuperados.
+SELECT u.nome
+FROM Usuario u
+WHERE u.id IN (
+      SELECT o.id_usuario
+ 	    FROM Objeto o
+ 		  WHERE o.data_hora_entrada BETWEEN '2021-08-12' AND '2021-08-17'
+      AND o.status = 'encontrado'
+);
+
+# 15. Faça uma consulta que selecione a categoria dos objetos que estão com o status de perdido entre 2019 e 2021 e que nunca foram recuperados.
+
+SELECT c.nome
+FROM Categoria c
+WHERE c.id IN (
+  		SELECT o.cod_categoria
+  		FROM Objeto o
+  		WHERE o.data_hora_entrada BETWEEN '2021-08-12' AND '2021-08-17' 
+      AND o.status = 'perdido'
+);
