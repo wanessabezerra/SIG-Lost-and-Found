@@ -100,7 +100,7 @@ FROM Usuario u
 WHERE u.id IN (
   SELECT o.id_usuario
   FROM Objeto o
-  WHERE o.data_hora_entrada BETWEEN '2019-08-17' AND '2021-08-14'
+  WHERE Year(o.data_hora_entrada) BETWEEN '2019' AND '2021'
   AND o.status = 'encontrado'
 );
 
@@ -111,6 +111,6 @@ FROM Categoria c
 WHERE c.id IN (
   SELECT o.cod_categoria
   FROM Objeto o
-  WHERE o.data_hora_entrada BETWEEN '2019-08-17' AND '2021-08-14' 
+  WHERE Year(o.data_hora_entrada) BETWEEN '2019' AND '2021' 
   AND o.status = 'perdido'
 );
