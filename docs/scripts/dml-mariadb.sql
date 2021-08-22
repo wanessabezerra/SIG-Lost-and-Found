@@ -58,7 +58,7 @@ FROM Objeto AS o
 INNER JOIN Usuario AS u
 INNER JOIN Mensagem AS m
 ON o.status = 'encontrado'
-WHERE u.id = o.id AND m.cod_usuario = u.id;
+WHERE o.id_usuario = u.id AND m.id_objeto = o.id;
 
 # 10. Encontre os nomes de todos os usuários no banco de dados, que não são tipo discente.
 
