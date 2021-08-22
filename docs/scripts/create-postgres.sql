@@ -74,6 +74,9 @@ CREATE TABLE Objeto(
 	cod_categoria NUMERIC NOT NULL,
 	CONSTRAINT fk_categoria FOREIGN KEY(cod_categoria) 
 		REFERENCES Categoria(id) 
+		ON DELETE RESTRICT ON UPDATE CASCADE,
+    	CONSTRAINT fk_usuario3 FOREIGN KEY(id_usuario) 
+		REFERENCES Usuario(id) 
 		ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
