@@ -68,7 +68,7 @@ WHERE tipo <> 'discente';
   
 # 11. Faça uma consulta que selecione o objeto e a categoria em que se encontra.
 
-SELECT o.nome, c.nome
+SELECT DISTINCT o.nome, c.nome
 FROM Objeto AS o 
 INNER JOIN Categoria AS c
 ON o.cod_categoria = c.id;
