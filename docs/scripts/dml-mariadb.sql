@@ -78,9 +78,9 @@ ON o.cod_categoria = c.id;
 SELECT u.nome
 FROM Usuario u 
 WHERE u.id IN (
-  		SELECT o.id_usuario
-  		FROM Objeto o 
-  		WHERE o.nome = 'livro' AND o.status = 'encontrado'
+  SELECT o.id_usuario
+  FROM Objeto o 
+  WHERE o.nome = 'livro' AND o.status = 'encontrado'
 );
 
 # 13. Encontre o nome e email do usuário que realizou a retirada do objeto 2.
@@ -88,9 +88,9 @@ WHERE u.id IN (
 SELECT u.nome, u.email
 FROM Usuario u
 WHERE u.id IN (
-  		SELECT r.id_retirado_por
- 		  FROM Retirada_do_Objeto r
-  		WHERE r.cod_objeto = '2' 
+  SELECT r.id_retirado_por
+  FROM Retirada_do_Objeto r
+  WHERE r.cod_objeto = '2' 
 );
 
 # 14. Faça uma consulta que selecione os nomes dos usuários que mais encontraram objetos entre 2019 e 2021.
@@ -98,10 +98,10 @@ WHERE u.id IN (
 SELECT u.nome
 FROM Usuario u
 WHERE u.id IN (
-      SELECT o.id_usuario
- 	    FROM Objeto o
- 		  WHERE o.data_hora_entrada BETWEEN '2021-08-12' AND '2021-08-17'
-      AND o.status = 'encontrado'
+  SELECT o.id_usuario
+  FROM Objeto o
+  WHERE o.data_hora_entrada BETWEEN '2021-08-12' AND '2021-08-17'
+  AND o.status = 'encontrado'
 );
 
 # 15. Faça uma consulta que selecione a categoria dos objetos que estão com o status de perdido entre 2019 e 2021 e que nunca foram recuperados.
@@ -109,8 +109,8 @@ WHERE u.id IN (
 SELECT c.nome
 FROM Categoria c
 WHERE c.id IN (
-  		SELECT o.cod_categoria
-  		FROM Objeto o
-  		WHERE o.data_hora_entrada BETWEEN '2021-08-12' AND '2021-08-17' 
-      AND o.status = 'perdido'
+  SELECT o.cod_categoria
+  FROM Objeto o
+  WHERE o.data_hora_entrada BETWEEN '2021-08-12' AND '2021-08-17' 
+  AND o.status = 'perdido'
 );
