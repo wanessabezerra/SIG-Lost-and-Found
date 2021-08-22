@@ -42,7 +42,7 @@ WHERE o.status = 'perdido';
 
 SELECT o.nome, r.data_hora_resgate
 FROM Retirada_do_Objeto r, Objeto o
-WHERE r.id = o.id;
+WHERE r.cod_objeto = o.id;
 
 # 8. Mostrar o código e o nome de todos os objetos de cor azul e que continuam perdidos.
 
