@@ -22,8 +22,8 @@
 8. Um **depósito** guarda uma quantidade de **objetos**;  
 9. Um **depósito** tem identificação, nome, quantidade;  
 10. O **objeto** tem identificação, nome, identificação do **usuário**, data e hora do cadastro, descrição, situação, status e categoria;  
-11. Temos **objetos** com o status: disponível ou indisponível;  
-12. Temos **objetos** com  a situação: perdido, encontrado e resgatado;  
+11. Temos **objetos** com o status: novo e usado;  
+12. Temos **objetos** com  a situação:perdido e encontrado;  
 13. **Retirada do objeto** tem identificação do objeto, data e hora da saída do objeto, nome de quem achou, nome de quem perdeu.  
 
 ---
