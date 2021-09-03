@@ -69,7 +69,6 @@ CREATE TABLE Objeto(
 	id_usuario INT NOT NULL,
 	data_hora_entrada DATETIME NOT NULL,
 	descricao VARCHAR(50) NOT NULL,
-	situacao VARCHAR(30) NOT NULL,
 	status VARCHAR(15) NOT NULL,
 	cod_categoria INT NOT NULL,
 	CONSTRAINT fk_categoria FOREIGN KEY(cod_categoria) 
