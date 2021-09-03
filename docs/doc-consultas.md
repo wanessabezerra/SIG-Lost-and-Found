@@ -8,9 +8,9 @@
 
 4. Faça uma consulta que selecione o nome, data e hora de entrada de todos os objetos cadastrados no sistema ordenados.
 
-5. Faça uma consulta que selecione o nome, descrição e situação de todos os objetos que foram encontrados e o seu dono.
+5. Faça uma consulta que selecione o nome, descrição de todos os objetos que foram encontrados e o seu dono.
 
-6. Faça uma consulta que selecione o nome, descrição e situação de todos os objetos que ainda não foram encontrados e o seu dono.
+6. Faça uma consulta que selecione o nome, descrição de todos os objetos que ainda não foram encontrados e o seu dono.
 
 7. Faça uma consulta que selecione o nome, data e hora dos objetos retirados.
 
