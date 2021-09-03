@@ -22,17 +22,17 @@ SELECT nome ,data_hora_entrada
 FROM Objeto 
 ORDER BY data_hora_entrada;
 
-# 5. Faça uma consulta que selecione o nome, descrição e situação de todos os objetos que foram encontrados e o seu dono.
+# 5. Faça uma consulta que selecione o nome, descrição de todos os objetos que foram encontrados e o seu dono.
 
-SELECT u.nome, o.nome, o.descricao, o.situacao, o.status
+SELECT u.nome, o.nome, o.descricao, o.status
 FROM Objeto o 
 INNER JOIN Usuario u
 ON o.id_usuario = u.id
 WHERE o.status = 'encontrado';
 
-# 6. Faça uma consulta que selecione o nome, descrição e situação de todos os objetos que ainda não foram encontrados e o seu dono.
+# 6. Faça uma consulta que selecione o nome, descrição de todos os objetos que ainda não foram encontrados e o seu dono.
 
-SELECT u.nome, o.nome, o.descricao, o.situacao, o.status
+SELECT u.nome, o.nome, o.descricao, o.status
 FROM Objeto o 
 INNER JOIN Usuario u
 ON o.id_usuario = u.id
