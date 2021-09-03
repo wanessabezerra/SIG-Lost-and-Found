@@ -19,7 +19,7 @@
 5. **Usuário** tem identificação, nome, email, telefone, tipo;  
 6. A **mensagem** tem identificação, identificação do objeto, identificação do **usuário**, conteúdo;  
 7. Um **depósito** tem de um ou mais **funcionários**;  
-8. Um **depósito** armazena uma certa quantidade/capacidade de **objetos**, ou seja espaços reservados para guardar o objeto perdido;  
+8. Um **depósito** armazena uma certa quantidade/capacidade de **objetos**, ou seja, espaços reservados para guardar o objeto perdido;  
 9. Um **depósito** tem identificação, nome, capacidade;  
 10. O **objeto** tem identificação, nome, identificação do **usuário**, data e hora do cadastro, descrição, situação, status e categoria;  
 11. Temos **objetos** com o status: perdido e encontrado;    
