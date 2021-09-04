@@ -73,23 +73,23 @@ INSERT INTO Categoria(id, nome)
         (5, 'Objetos regulares')
 ;
 
-INSERT INTO Objeto(id, nome, id_usuario, data_hora_entrada, descricao, situacao, status, cod_categoria)
+INSERT INTO Objeto(id, nome, id_usuario, data_hora_entrada, descricao, status, cod_categoria)
     VALUES
-        (1, 'carteira', 1, '2019-08-17', 'uma carteira com alguns documentos',  'novo', 'perdido', 4),
-        (2, 'livro', 2, '2019-08-16', 'livro de harry potter', 'novo', 'encontrado', 5),
-        (3, 'mochila', 3, '2019-08-13', 'mochila azul', 'usado', 'perdido', 3),
-        (4, 'mochila', 3, '2019-08-13', 'mochila roxa', 'usado', 'perdido', 3),
-        (5, 'caneta', 4, '2019-08-12', 'caneta laranja', 'usado', 'encontrado', 3),
-        (6, 'carteira', 5, '2020-08-17', 'uma carteira preta de couro',  'novo', 'perdido', 4),
-        (7, 'livro', 5, '2020-08-16', 'livro de arduino', 'novo', 'encontrado', 5),
-        (8, 'mochila', 6, '2020-08-13', 'mochila azul', 'usado', 'perdido', 3),
-        (9, 'celular', 7, '2020-08-13', 'nokia', 'usado', 'perdido', 4),
-        (10, 'caneta', 8, '2020-08-12', 'caneta rosa', 'usado', 'encontrado', 3),
-        (11, 'celular', 9, '2020-08-17', 'uma carteira com alguns documentos',  'novo', 'perdido', 4),
-        (12, 'celular', 9, '2020-08-18', 'samsung', 'novo', 'encontrado', 4),
-        (13, 'mochila', 10, '2021-08-13', 'mochila azul', 'usado', 'perdido', 3),
-        (14, 'mochila', 10, '2021-08-13', 'mochila laranja', 'usado', 'perdido', 3),
-        (15, 'caneta', 10, '2021-08-14', 'caneta vermelha', 'usado', 'encontrado', 3)
+        (1, 'carteira', 1, '2019-08-17', 'uma carteira com alguns documentos', 'perdido', 4),
+        (2, 'livro', 2, '2019-08-16', 'livro de harry potter', 'encontrado', 5),
+        (3, 'mochila', 3, '2019-08-13', 'mochila azul', 'perdido', 3),
+        (4, 'mochila', 3, '2019-08-13', 'mochila roxa',  'perdido', 3),
+        (5, 'caneta', 4, '2019-08-12', 'caneta laranja',  'encontrado', 3),
+        (6, 'carteira', 5, '2020-08-17', 'uma carteira preta de couro', 'perdido', 4),
+        (7, 'livro', 5, '2020-08-16', 'livro de arduino',  'encontrado', 5),
+        (8, 'mochila', 6, '2020-08-13', 'mochila azul',  'perdido', 3),
+        (9, 'celular', 7, '2020-08-13', 'nokia',  'perdido', 4),
+        (10, 'caneta', 8, '2020-08-12', 'caneta rosa',  'encontrado', 3),
+        (11, 'celular', 9, '2020-08-17', 'uma carteira com alguns documentos',   'perdido', 4),
+        (12, 'celular', 9, '2020-08-18', 'samsung',  'encontrado', 4),
+        (13, 'mochila', 10, '2021-08-13', 'mochila azul',  'perdido', 3),
+        (14, 'mochila', 10, '2021-08-13', 'mochila laranja',  'perdido', 3),
+        (15, 'caneta', 10, '2021-08-14', 'caneta vermelha',  'encontrado', 3)
 ;
 
 INSERT INTO Deposito_Objeto(cod_deposito, cod_objeto)
