@@ -1,5 +1,5 @@
 # Modelo Entidade Relacionamento (MER)
-![Modelo ER do Banco Lost and Found](<https://github.com/wanessabezerra/SIG-Lost-and-Found/blob/main/docs/images/ModeloER.jpeg>)
+![Modelo ER do Banco Lost and Found](<https://github.com/wanessabezerra/SIG-Lost-and-Found/blob/main/docs/images/Lost%26Found_MER.png>)
 
 # Modelo Relacional (MR) 
 
